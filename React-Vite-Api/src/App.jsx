@@ -1,29 +1,17 @@
-import { 
-  createBrowserRouter,
-  RouterProvider,
-  Route,
-  BrowserRouter as Router,
-  Routes
-} from 'react-router-dom';
-import './App.css'
-
-import Navbar from './components/Navbar'; 
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import About from "./pages/About";
-import MoviesSearchPage from './pages/MoviesDataBase';
+import PersonPage from "./pages/PersonPage";
 
 function App() {
   return (
     <Router>
-      <div>
-        <Navbar />
-          <Routes>
-          <Route path="/" element={<Home />} />  
-          <Route exact path="/about" element={<About />} /> 
-          <Route exact path="/moviesdatabase" element={<MoviesSearchPage />}/>
-          </Routes>
-      </div>
-      </Router>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/person" element={<PersonPage />} />
+      </Routes>
+    </Router>
   );
 }
-export default App
+
+export default App;
