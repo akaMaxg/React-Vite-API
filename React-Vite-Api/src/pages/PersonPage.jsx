@@ -2,7 +2,8 @@ import { useLocation } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import NavBar from "../components/Navbar";
 import PersonGenres from "../components/testGenre";
-import PersonMovies from "../components/testMovies";
+import MyComponent from "../components/testGenrePost";
+import MoviesRating from "../components/testMovieRating";
 
 const PersonPage = () => {
   const location = useLocation();
@@ -27,7 +28,8 @@ const PersonPage = () => {
       <p>Last Name: {person.lastName}</p>
       <p>Email: {person.email}</p>
       <PersonGenres personId={person.id} />
-      <PersonMovies personId={person.id} />
+      <MyComponent personId={person.id} />
+      <MoviesRating personId={person.id} />
       <NavBar />
     </div>
   );
