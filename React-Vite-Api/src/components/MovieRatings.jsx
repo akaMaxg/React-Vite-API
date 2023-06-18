@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Styled from "styled-components";
-import MovieDetails from "./testAllMovies";
+import MovieDetails from "./AllMovies";
 
 const MoviesRating = ({ personId }) => {
   const [movies, setMovies] = useState([]);

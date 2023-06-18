@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Modal from "react-modal";
 
-const MyComponent2 = ({ personId }) => {
+const PostGenreMovieRating = ({ personId }) => {
   const [result, setResult] = useState(null);
   const [movieId, setMovieId] = useState("");
   const [genreId, setGenreId] = useState("");
@@ -88,4 +88,4 @@ const MyComponent2 = ({ personId }) => {
   );
 };
 
-export default MyComponent2;
+export default PostGenreMovieRating;

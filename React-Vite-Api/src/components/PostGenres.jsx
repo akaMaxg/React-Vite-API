@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Modal from "react-modal";
 
-const MyComponent = ({ personId }) => {
+const PostGenres = ({ personId }) => {
   const [result, setResult] = useState(null);
   const [genreId, setGenreId] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -74,4 +74,4 @@ const MyComponent = ({ personId }) => {
   );
 };
 
-export default MyComponent;
+export default PostGenres;

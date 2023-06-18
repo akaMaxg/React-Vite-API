@@ -1,10 +1,9 @@
 import { useLocation } from "react-router-dom";
 import React, { useEffect, useState } from "react";
-import NavBar from "../components/Navbar";
-import PersonGenres from "../components/testGenre";
-import MyComponent from "../components/testGenrePost";
-import MoviesRating from "../components/testMovieRating";
-import MyComponent2 from "../components/testGenreMovieRatingPost";
+import PersonGenres from "../components/Genres";
+import MyComponent from "../components/PostGenres";
+import MoviesRating from "../components/MovieRatings";
+import MyComponent2 from "../components/PostGenreMovieRating";
 
 const PersonPage = () => {
   const location = useLocation();
@@ -16,7 +15,6 @@ const PersonPage = () => {
       <div>
         <h1>The Person page</h1>
         <p>Loading...</p>
-        <NavBar />
       </div>
     );
   }
@@ -32,7 +30,6 @@ const PersonPage = () => {
       <MyComponent personId={person.id} />
       <MoviesRating personId={person.id} />
       <MyComponent2 personId={person.id} />
-      <NavBar />
     </div>
   );
 };
