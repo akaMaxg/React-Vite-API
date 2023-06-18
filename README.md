@@ -24,8 +24,8 @@ OK,  No modifications has been made to API-client.
 1.  Download or clone the project files from the Git repository.  
 2.  Open the solution or project in visual studio code.  
 3.  Open the project on root folder
-4.  Install dependencies with <npm install>
-5.  Run application by <npm run dev>
+4.  Install dependencies with "npm install"
+5.  Run application by "npm run dev"
 
 ## Usage
 No log-in required. The applications provides the information necessary to test it.
