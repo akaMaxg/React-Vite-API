@@ -4,6 +4,7 @@ import NavBar from "../components/Navbar";
 import PersonGenres from "../components/testGenre";
 import MyComponent from "../components/testGenrePost";
 import MoviesRating from "../components/testMovieRating";
+import MyComponent2 from "../components/testGenreMovieRatingPost";
 
 const PersonPage = () => {
   const location = useLocation();
@@ -30,6 +31,7 @@ const PersonPage = () => {
       <PersonGenres personId={person.id} />
       <MyComponent personId={person.id} />
       <MoviesRating personId={person.id} />
+      <MyComponent2 personId={person.id} />
       <NavBar />
     </div>
   );
