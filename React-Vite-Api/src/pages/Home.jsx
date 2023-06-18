@@ -4,6 +4,8 @@ import NavBar from "../components/Navbar";
 import styled from "styled-components";
 import backgroundImage from "../assets/MainContentPicture.jpg";
 
+//Homepage
+
 const Home = () => {
   return (
     <>

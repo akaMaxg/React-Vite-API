@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Styled from "styled-components";
 
+//Accepts personid, returns all genres for that person
+
 const PersonGenres = ({ personId }) => {
   const [genres, setGenres] = useState([]);
 
@@ -23,7 +25,6 @@ const PersonGenres = ({ personId }) => {
   return (
     <GenreContainer>
       <div>
-        <h2>Genres for Person {personId}</h2>
         <ul>
           {genres.map((genre) => (
             <li key={genre.genreId}>{genre.genreName}</li>

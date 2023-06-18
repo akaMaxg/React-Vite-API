@@ -3,7 +3,9 @@ import axios from "axios";
 import Styled from "styled-components";
 import MovieDetails from "./AllMovies";
 
-const MoviesRating = ({ personId }) => {
+//Accepts personId, returns all movies connected to one person
+
+const PersonMovies = ({ personId }) => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -26,7 +28,6 @@ const MoviesRating = ({ personId }) => {
   return (
     <MoviesContainer>
       <div>
-        <h2>All Movies watched with rating</h2>
         {filteredMovies.length === 0 ? (
           <p>No movies found for this person</p>
         ) : (
@@ -55,7 +56,7 @@ const MoviesRating = ({ personId }) => {
   );
 };
 
-export default MoviesRating;
+export default PersonMovies;
 
 const MoviesContainer = Styled.div`
   padding: 1em 2.5em;

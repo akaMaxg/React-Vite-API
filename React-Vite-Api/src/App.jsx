@@ -5,6 +5,7 @@ import PersonPage from "./pages/PersonPage";
 import NavBar from "./components/Navbar";
 
 function App() {
+  // Two routes, Home and Person
   return (
     <Router>
       <NavBar />

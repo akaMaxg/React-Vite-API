@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Styled from "styled-components";
 
+//Component solely  used to map persongenrerating table with movielists
 const MovieDetails = ({ movieId }) => {
   const [movie, setMovie] = useState(null);
 
